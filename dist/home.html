@@ -6,22 +6,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styke1.css">
     <title>Shivam Medical Hall</title>
+    <script src="./test.js"></script>
 </head>
+<style>
+    /*body{
+        background-image: linear-gradient(rgba(0,0,50,0.8),rgba(0.0,50,0.8)), url(../icons/4.jpg);
+        background-size: cover;
+        position: relative;
+    }*/
+    
+    * {box-sizing:border-box}
 
-<body class="bg-slate-950">
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+      border: 8px;
+      border-color: cyan;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+    #category{
+        display: grid;
+        grid-gap: 50px;
+        grid-template-columns: 1fr ,1fr, 1fr,1fr;
+    }
+    
+    #a:hover{
+        box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    }
+    
+</style>
+
+<body class=" bg-white-100 dark:bg-slate-900">
     <!-- navbar goes here -->
-    <nav class=" w-full h-16 bg-yellow-200  flex iteam-center justify-between px-4 md:px4">
+    <nav class=" w-full h-16 bg-gradient-to-r from-indigo-500 flex iteam-center justify-between px-4 md:px4">
         
-            <div class="text-2xl text-yellow-700 font-bold ">Shivam Medicals</div>
-            <ul class="md:flex hidden font-semibold">
-                <li class="mx-[10px] cursor-pointer">Home</li>
-                <li class="mx-[10px] cursor-pointer">About Us</li>
-                <li class="mx-[10px] cursor-pointer">Contact us</li>
+            <div class="text-2xl   text-black dark:text-white font-bold  flex "><p class="font-mono p-3">Shivam Medicals</p><img class="h-8 m-3 hover" src="https://cdn-icons-png.flaticon.com/128/3209/3209049.png" alt=""></div>
+            <ul class="md:flex hidden font-semibold mt-5 pr-10">
+                <li class="mx-[10px] cursor-pointer text-xl text-black dark:text-white"><span class="underline decoration-sky-600 hover:decoration-blue-400 hover:text-2xl font-semibold"><a href="./home.html">Home</a></span></li>
+                <li class="mx-[10px] cursor-pointer text-xl text-black dark:text-white "><span class="underline decoration-sky-600 hover:decoration-blue-400 hover:text-2xl font-semibold"><a href="./Aboutus.html">About Us</a></span></li>
+                <li class="mx-[10px] cursor-pointer text-xl text-black dark:text-white"><span class="underline decoration-sky-600 hover:decoration-blue-400 hover:text-2xl font-semibold"><a href="">Contact</a></span></li>
             </ul>
             <div>
                 <!-- <div>LogIn/SignUp</div> -->
-                <button class="hidden md:block mt-3 mb-3 px-4 py-2 bg-yellow-700 rounded-xl font-semibold hover:text-2xl hover:bg-yellow-500 cursor-pointer">LogIn/SignUp</button>
+                <button class="hidden md:block mt-3 mb-3 px-4 py-2 bg-black text-white rounded-xl font-bold hover:text-xl dark:bg-white dark:text-black cursor-pointer" onclick="loginform()">LogIn/SignUp</button>
                 <div class="md:hidden">
                     <a class=" text-4xl " href="#"> &#8801; </a>
                 </div>
@@ -31,33 +141,72 @@
 
     <!-- nav bar ends here -->
     <!-- image section start here -->
-    <header class=" w-full h-auto">
-        <img class="w-full  hidden md:block " src="https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-        <img class=" w-full md:hidden overflow-hidden text-center justify-between"src="https://images.pexels.com/photos/3873147/pexels-photo-3873147.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+    <section >
+    <header class=" w-full h-auto p-10 ">
+       
+        <div    class="slideshow-container" >
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%">
+              <div class="text">Caption Text</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img class="" src="../icons/1.jpg" style="width:100%">
+              <div class="text">Caption Two</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="../icons/2.jpg" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)" >&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
 
     </header>
+</section>
+<br>
+<section class="w-3/4 ml-44 border-4">
+    <script type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
+<zapier-interfaces-page-embed page-id='cln1hc1up255070njob4aez1mg' no-background='false' style='max-width: 1800px; height: 500px; '></zapier-interfaces-page-embed>
+</section>
     <!-- image section ends here -->
     <!-- service section start here -->
     <div class="h-auto w-100 flex flex-wrap flex-col items-center text-center p-10"> 
         <div class="w-full h-auto flex flex-wrap flex-col items-center text-center">
             <p class="text-yellow-700 font-bold text-2xl md:text-4xl text-center">Get Your Services here</p>
-            <div class="w-36  h-1 border-b-4 border-cyan-400 mt-2 md:mt-4 rounded-2xl"></div>
+            <div class="w-36  h-1 border-b-4 border-cyan-400 mt-2 md:mt-4 rounded-2xl mb-4"></div>
             <div class="w-full flex flex-wrap justify-evenly ">
-                <div class=" w-46 flex flex-col items-center mb-12 hover:border-4 hover:border-cyan-500 hover:border-double">
-                    <img class= "h-2/3 w-2/3 mt-7" src="https://cdn.xxl.thumbs.canstockphoto.com/steady-pharma-services-vector-web-icon-flat-and-isolated-vector-illustration-icon-with-minimal-drawing_csp69302390.jpg" alt="">
-                    <p class="text-3xl font-bold text-white mt-2">Medicine</p>
+                <div class=" w-46 flex flex-col items-center mb-12 hover:border-4 hover:border-cyan-500 hover:border-double  dark:border-white shadow-2xl shadow-inner" id="a">
+                    <a href="https://www.google.com"><img class= "h-[100px] w-[150px] border-spacing-1" src="https://assets.pharmeasy.in/apothecary/images/medicine_ff.webp?dim=256x0" alt=""></a>
+                    <p class="text-3xl font-bold text-black dark:text-white mt-2">Medicine</p>
                     <p class="text-2xl font-semibold text-slate-500 ">More 5000+ varieties</p>
                 
                 </div>
-                <div class=" w-46 flex flex-col items-center mb-12 hover:border-4 hover:border-cyan-500 hover:border-double">
-                    <img class= "h-[100px] w-[150px] border-spacing-1" src="../dist/medicine.gif" alt="">
-                    <p class="text-3xl font-bold text-white mt-2">Medicine</p>
+                <div class=" w-46 flex flex-col items-center mb-12 hover:border-4 hover:border-cyan-500 hover:border-double shadow-2xl dark:border-white" id="a">
+                    <img class= "h-[100px] w-[150px] border-spacing-1" src="https://assets.pharmeasy.in/apothecary/images/healthcare_ff.webp?dim=256x0" alt="">
+                    <p class="text-3xl font-bold text-black dark:text-white mt-2">HealthCare</p>
                     <p class="text-2xl font-semibold text-slate-500 ">More 5000+ varieties</p>
                 
                 </div>
-                <div class=" w-46 flex flex-col items-center mb-12 hover:border-4 hover:border-cyan-500 hover:border-double">
-                    <img class= "h-2/3 w-2/3 mt-7" src="https://cdn.xxl.thumbs.canstockphoto.com/steady-pharma-services-vector-web-icon-flat-and-isolated-vector-illustration-icon-with-minimal-drawing_csp69302390.jpg" alt="">
-                    <p class="text-3xl font-bold text-white mt-2">Medicine</p>
+                <div class=" w-46 flex flex-col items-center mb-12 hover:border-4 hover:border-cyan-500 hover:border-double shadow-2xl dark:border-white" id="a">
+                    <img class= "h-[100px] w-[150px] border-spacing-1" src="https://assets.pharmeasy.in/apothecary/images/labtest_ff.webp?dim=256x0" alt="">
+                    <p class="text-3xl font-bold text-black dark:text-white mt-2">Lab Test</p>
                     <p class="text-2xl font-semibold text-slate-500 ">More 5000+ varieties</p>
                 
                 </div>
@@ -69,37 +218,52 @@
                 
             </div>
     <!-- services section ends here -->
-    <div class="h-auto w-100 flex flex-wrap flex-col items-center text-center p-10"> 
+    <div class="h-auto w-100 flex flex-wrap flex-col items-center text-center p-10" id="category"> 
         <div class="w-full h-auto flex flex-wrap flex-col items-center text-center">
             <p class="text-yellow-700 font-bold text-2xl md:text-4xl text-center">Product Section</p>
             <div class="w-36  h-1 border-b-4 border-cyan-400 mt-2 md:mt-4 rounded-2xl"></div>
             <div class="w-full flex flex-wrap justify-evenly ">
         </div>
         <div class="w-[90%] h-auto flex flex-wrap justify-around mt-6">
-            <div class="w-64 flex flex-col items-center mb-12 border-white border-2 rounded-xl p-2">
-                <img src="https://cdn.xxl.thumbs.canstockphoto.com/steady-pharma-services-vector-web-icon-flat-and-isolated-vector-illustration-icon-with-minimal-drawing_csp69302390.jpg" alt="">
-                <p class="text-white font-bold text-2xl">Lab Tese</p>
-                <p class="text-slate-400 font-semibold ">Blood Test</p>
+            <div class="w-64 flex flex-col items-center mb-12 hover:border-4 hover:border-cyan-500 hover:border-double shadow-2xl dark:border-white">
+                <img class="h-[100px] w-[150px] border-spacing-1" src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/f10917087a483040b557e4b18204312c.png?f=png?dim=256x0" alt="">
+                <p class="text-black dark:text-white font-bold text-2xl">Top Product</p>
+                <p class="text-slate-400 font-semibold "></p>
         </div>
-            <div class="w-64 flex flex-col items-center mb-12  p-2">
-                <img src="https://cdn.xxl.thumbs.canstockphoto.com/steady-pharma-services-vector-web-icon-flat-and-isolated-vector-illustration-icon-with-minimal-drawing_csp69302390.jpg" alt="">
-                <p class="text-white font-bold text-2xl">Lab Tese</p>
-                <p class="text-slate-400 font-semibold ">Blood Test</p>
+            <div class="w-64 flex flex-col items-center mb-12  hover:border-4 hover:border-cyan-500 hover:border-double shadow-2xl dark:border-white">
+                <img class="h-[100px] w-[150px] border-spacing-1 " src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/fa936f30b4563fc4abd187fb22fe5258.png?f=png?dim=256x0" alt="">
+                <p class="text-black dark:text-white font-bold text-2xl">Elderly care</p>
+                <p class="text-slate-400 font-semibold "></p>
         </div>
-            <div class="w-64 flex flex-col items-center mb-12  p-2">
-                <img src="https://cdn.xxl.thumbs.canstockphoto.com/steady-pharma-services-vector-web-icon-flat-and-isolated-vector-illustration-icon-with-minimal-drawing_csp69302390.jpg" alt="">
-                <p class="text-white font-bold text-2xl">Lab Tese</p>
-                <p class="text-slate-400 font-semibold ">Blood Test</p>
+            <div class="w-64 flex flex-col items-center mb-12  hover:border-4 hover:border-cyan-500 hover:border-double shadow-2xl dark:border-white">
+                <img  class="h-[100px] w-[150px] border-spacing-1" src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/1e622b0308ec3ab48887512eaa3488a5.png?f=png?dim=256x0" alt="">
+                <p class="text-black dark:text-white font-bold text-2xl">Personal Care</p>
+                <p class="text-slate-400 font-semibold "></p>
         </div>
-            <div class="w-64 flex flex-col items-center mb-12  p-2">
-                <img src="https://cdn.xxl.thumbs.canstockphoto.com/steady-pharma-services-vector-web-icon-flat-and-isolated-vector-illustration-icon-with-minimal-drawing_csp69302390.jpg" alt="">
-                <p class="text-white font-bold text-2xl">Lab Tese</p>
-                <p class="text-slate-400 font-semibold ">Blood Test</p>
+            <div class="w-64 flex flex-col items-center mb-12  hover:border-4 hover:border-cyan-500 hover:border-double shadow-2xl dark:border-white">
+                <img class="h-[100px] w-[150px] border-spacing-1"src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/9cc9a28ea4513009966cae794114eefd.png?f=png?dim=256x0" alt="">
+                <p class="text-black dark:text-white font-bold text-2xl">HealthCare Dvices</p>
+                <p class="text-slate-400 font-semibold "></p>
         </div>
-            <div class="w-64 flex flex-col items-center mb-12  p-2">
-                <img src="https://cdn.xxl.thumbs.canstockphoto.com/steady-pharma-services-vector-web-icon-flat-and-isolated-vector-illustration-icon-with-minimal-drawing_csp69302390.jpg" alt="">
-                <p class="text-white font-bold text-2xl">Lab Tese</p>
-                <p class="text-slate-400 font-semibold ">Blood Test</p>
+            <div class="w-64 flex flex-col items-center mb-12  hover:border-4 hover:border-cyan-500 hover:border-double shadow-2xl dark:border-white">
+                <img class="h-[100px] w-[150px] border-spacing-1" src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/335dae76832d370c94f0440f5ba89e1f.png?f=png?dim=256x0" alt="">
+                <p class="text-black dark:text-white font-bold text-2xl">Health food and drink</p>
+                <p class="text-slate-400 font-semibold "></p>
+        </div>
+            <div class="w-64 flex flex-col items-center mb-12  hover:border-4 hover:border-cyan-500 hover:border-double shadow-2xl dark:border-white">
+                <img class="h-[100px] w-[150px] border-spacing-1" src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/ce48d6d71ace3892945f0b0a64c1f0e9.png?f=png?dim=256x0" alt="">
+                <p class="text-black dark:text-white font-bold text-2xl">Health food and drink</p>
+                <p class="text-slate-400 font-semibold "></p>
+        </div>
+            <div class="w-64 flex flex-col items-center mb-12 hover:border-4 hover:border-cyan-500 hover:border-double shadow-2xl dark:border-white">
+                <img class="h-[100px] w-[150px] border-spacing-1" src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/fb48ce63ed45318b92689d84482d1111.jpg?f=jpg?dim=256x0" alt="">
+                <p class="text-black dark:text-white font-bold text-2xl">Health food and drink</p>
+                <p class="text-slate-400 font-semibold "></p>
+        </div>
+            <div class="w-64 flex flex-col items-center mb-12  hover:border-4 hover:border-cyan-500 hover:border-double shadow-2xl dark:border-white">
+                <img class="h-[100px] w-[150px] border-spacing-1" src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/4405b7900b0b34fcb5c8572aae9d4b2e.png?f=png?dim=256x0" alt="">
+                <p class="text-black dark:text-white font-bold text-2xl">Health food and drink</p>
+                <p class="text-slate-400 font-semibold "></p>
         </div>
         <!-- Product sectios ends here -->
     </div>
@@ -109,40 +273,61 @@
     <!-- our footer starts here -->
     <footer class="w-full bg-grey-100 px-4 text-white pt-8 flex flex-col md:flex-row flex-wrap justify-between md:px-12">
         <div>
-            <img class="h-32 w-32 mb-2" src="https://cdn.xxl.thumbs.canstockphoto.com/steady-pharma-services-vector-web-icon-flat-and-isolated-vector-illustration-icon-with-minimal-drawing_csp69302390.jpg" alt="">
-            <p class="mt-3">Email Us</p>
-            <img class="h-32 w-32" src="https://cdn.xxl.thumbs.canstockphoto.com/steady-pharma-services-vector-web-icon-flat-and-isolated-vector-illustration-icon-with-minimal-drawing_csp69302390.jpg" alt="">
+           <a href="../dist/Aboutus.html"> <img class="h-35 w-32 mb-2" src="../icons/about.jpg" alt=""></a>
+            
+            
         </div>
         <div >
-            <h2 class="font-semibold text-xl mt-4">SMH</h2>
+            <h2 class="font-semibold text-xl mt-4 text-black dark:text-white">SMH</h2>
             <div class="w-32 h-1 border-b-2 border-cyan-500 rounded-2xl mx-2 "></div>
             <div>
-                <p>About US</p>
-                <p>FAQs</p>
-                <p>Privacy Policy</p>
+                <p class="text-black dark:text-white">About US</p>
+                <p class="text-black dark:text-white">FAQs</p>
+                <p class="text-black dark:text-white">Privacy Policy</p>
             </div>
         </div>
         <div >
-            <h2 class="font-semibold text-xl mt-4">SMH</h2>
+            <h2 class="font-semibold text-xl mt-4 text-black dark:text-white ">SMH</h2>
             <div class="w-32 h-1 border-b-2 border-cyan-500 rounded-2xl mx-2 "></div>
             <div>
-                <p>Products</p>
-                <p>jop portal</p>
-                <p>Skill portals</p>
-                <p>Achievment</p>
+                <p class="text-black dark:text-white">Products</p>
+                <p class="text-black dark:text-white">jop portal</p>
+                <p class="text-black dark:text-white">Skill portals</p>
+                <p class="text-black dark:text-white">Achievment</p>
                 <p></p>
             </div>
         </div>
         <div >
-            <h2 class="font-semibold text-xl mt-4">SMH</h2>
+            <h2 class="font-semibold text-xl mt-4 text-black dark:text-white">SMH</h2>
             <div class="w-32 h-1 border-b-2 border-cyan-500 rounded-2xl mx-2 "></div>
             <div>
-                <p>About US</p>
-                <p>FAQs</p>
-                <p>Privacy Policy</p>
+                <p class="text-black dark:text-white">About US</p>
+                <p class="text-black dark:text-white">FAQs</p>
+                <p class="text-black dark:text-white">Privacy Policy</p>
             </div>
         </div>
         
+        <script>
+         
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}
+              slides[slideIndex-1].style.display = "block";
+              setTimeout(showSlides, 5000); // Change image every 2 seconds
+            }
+            function loginform()
+            {
+                windows.location.href = "../dist/login.html";
+            }
+        </script>
 
 
     </footer>
