@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styke1.css">
+    <link rel="stylesheet" href="slideshow.css">
     <title>Shivam Medical Hall</title>
     <script src="./test.js"></script>
 </head>
@@ -17,95 +18,7 @@
         position: relative;
     }*/
     
-    * {box-sizing:border-box}
-
-    /* Slideshow container */
-    .slideshow-container {
-      max-width: 1000px;
-      position: relative;
-      margin: auto;
-      border: 8px;
-      border-color: cyan;
-    }
-    
-    /* Hide the images by default */
-    .mySlides {
-      display: none;
-    }
-    
-    /* Next & previous buttons */
-    .prev, .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      margin-top: -22px;
-      padding: 16px;
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-      transition: 0.6s ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-    }
-    
-    /* Position the "next button" to the right */
-    .next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-    
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover, .next:hover {
-      background-color: rgba(0,0,0,0.8);
-    }
-    
-    /* Caption text */
-    .text {
-      color: #f2f2f2;
-      font-size: 15px;
-      padding: 8px 12px;
-      position: absolute;
-      bottom: 8px;
-      width: 100%;
-      text-align: center;
-    }
-    
-    /* Number text (1/3 etc) */
-    .numbertext {
-      color: #f2f2f2;
-      font-size: 12px;
-      padding: 8px 12px;
-      position: absolute;
-      top: 0;
-    }
-    
-    /* The dots/bullets/indicators */
-    .dot {
-      cursor: pointer;
-      height: 15px;
-      width: 15px;
-      margin: 0 2px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
-    }
-    
-    .active, .dot:hover {
-      background-color: #717171;
-    }
-    
-    /* Fading animation */
-    .fade {
-      animation-name: fade;
-      animation-duration: 1.5s;
-    }
-    
-    @keyframes fade {
-      from {opacity: .4}
-      to {opacity: 1}
-    }
+  
 
     #category{
         display: grid;
@@ -116,6 +29,9 @@
     #a:hover{
         box-shadow: 0 0 11px rgba(33,33,33,.2); 
     }
+    #nav1{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
     
 </style>
 
@@ -123,11 +39,11 @@
     <!-- navbar goes here -->
     <nav class=" w-full h-16 bg-gradient-to-r from-indigo-500 flex iteam-center justify-between px-4 md:px4">
         
-            <div class="text-2xl   text-black dark:text-white font-bold  flex "><p class="font-mono p-3">Shivam Medicals</p><img class="h-8 m-3 hover" src="https://cdn-icons-png.flaticon.com/128/3209/3209049.png" alt=""></div>
+            <div class="text-2xl   text-black dark:text-white font-bold  flex "><p class="  p-3" id="nav1">Shivam Medicals</p><img class="h-8 m-3 hover" src="https://cdn-icons-png.flaticon.com/128/3209/3209049.png" alt=""></div>
             <ul class="md:flex hidden font-semibold mt-5 pr-10">
-                <li class="mx-[10px] cursor-pointer text-xl text-black dark:text-white"><span class="underline decoration-sky-600 hover:decoration-blue-400 hover:text-2xl font-semibold"><a href="./home.html">Home</a></span></li>
-                <li class="mx-[10px] cursor-pointer text-xl text-black dark:text-white "><span class="underline decoration-sky-600 hover:decoration-blue-400 hover:text-2xl font-semibold"><a href="./Aboutus.html">About Us</a></span></li>
-                <li class="mx-[10px] cursor-pointer text-xl text-black dark:text-white"><span class="underline decoration-sky-600 hover:decoration-blue-400 hover:text-2xl font-semibold"><a href="">Contact</a></span></li>
+                <li class="mx-[10px] cursor-pointer text-xl text-black dark:text-white"><a href="./home.html">Home</a></span></li>
+                <li class="mx-[10px] cursor-pointer text-xl text-black dark:text-white "><a href="./Aboutus.html">About Us</a></span></li>
+                <li class="mx-[10px] cursor-pointer text-xl text-black dark:text-white"><a href="">Contact</a></span></li>
             </ul>
             <div>
                 <!-- <div>LogIn/SignUp</div> -->
@@ -144,24 +60,35 @@
     <section >
     <header class=" w-full h-auto p-10 ">
        
+        
         <div    class="slideshow-container" >
 
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
-              <img src="https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%">
+              <div class="numbertext">1 / 5</div>
+              <img src="../dist/image/a1.png" style="width:100%">
               <div class="text">Caption Text</div>
             </div>
           
             <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
-              <img class="" src="../icons/1.jpg" style="width:100%">
+              <div class="../dist/image/a3.png">2 / 5</div>
+              <img class="" src="../dist/image/a2.jpg" style="width:100%">
               <div class="text">Caption Two</div>
             </div>
           
             <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
-              <img src="../icons/2.jpg" style="width:100%">
+              <div class="numbertext">3 / 5</div>
+              <img src="../dist/image/a5.jpg" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 5</div>
+              <img src="../dist/image/a4.jpeg" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">5 / 5</div>
+              <img src="../dist/image/a3.jpg" style="width:100%">
               <div class="text">Caption Three</div>
             </div>
           
@@ -176,12 +103,14 @@
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
           </div>
 
     </header>
 </section>
 <br>
-<section class="w-3/4 ml-44 border-4">
+<section class="w-3/4 ml-44 border-4 ">
     <script type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
 <zapier-interfaces-page-embed page-id='cln1hc1up255070njob4aez1mg' no-background='false' style='max-width: 1800px; height: 500px; '></zapier-interfaces-page-embed>
 </section>
@@ -192,22 +121,22 @@
             <p class="text-yellow-700 font-bold text-2xl md:text-4xl text-center">Get Your Services here</p>
             <div class="w-36  h-1 border-b-4 border-cyan-400 mt-2 md:mt-4 rounded-2xl mb-4"></div>
             <div class="w-full flex flex-wrap justify-evenly ">
-                <div class=" w-46 flex flex-col items-center mb-12 hover:border-4 hover:border-cyan-500 hover:border-double  dark:border-white shadow-2xl shadow-inner" id="a">
-                    <a href="https://www.google.com"><img class= "h-[100px] w-[150px] border-spacing-1" src="https://assets.pharmeasy.in/apothecary/images/medicine_ff.webp?dim=256x0" alt=""></a>
+                <div class=" w-46 flex flex-col items-center mb-12 hover:border-4 hover:border-cyan-500 hover:border-double  dark:border-white shadow-2xl" id="a">
+                    <a href="../dist/cart.html"><img class= "h-[100px] w-[150px] border-spacing-1" src="https://assets.pharmeasy.in/apothecary/images/medicine_ff.webp?dim=256x0" alt="">
                     <p class="text-3xl font-bold text-black dark:text-white mt-2">Medicine</p>
                     <p class="text-2xl font-semibold text-slate-500 ">More 5000+ varieties</p>
                 
-                </div>
+                </div></a>
                 <div class=" w-46 flex flex-col items-center mb-12 hover:border-4 hover:border-cyan-500 hover:border-double shadow-2xl dark:border-white" id="a">
-                    <img class= "h-[100px] w-[150px] border-spacing-1" src="https://assets.pharmeasy.in/apothecary/images/healthcare_ff.webp?dim=256x0" alt="">
+                   <a href="../dist/healthcare.html"><img class= "h-[100px] w-[150px] border-spacing-1" src="https://assets.pharmeasy.in/apothecary/images/healthcare_ff.webp?dim=256x0" alt="">
                     <p class="text-3xl font-bold text-black dark:text-white mt-2">HealthCare</p>
-                    <p class="text-2xl font-semibold text-slate-500 ">More 5000+ varieties</p>
+                    <p class="text-2xl font-semibold text-slate-500 ">More 5000+ varieties</p></a>
                 
                 </div>
                 <div class=" w-46 flex flex-col items-center mb-12 hover:border-4 hover:border-cyan-500 hover:border-double shadow-2xl dark:border-white" id="a">
-                    <img class= "h-[100px] w-[150px] border-spacing-1" src="https://assets.pharmeasy.in/apothecary/images/labtest_ff.webp?dim=256x0" alt="">
+                    <a href="../dist/labtest.html"><img class= "h-[100px] w-[150px] border-spacing-1" src="https://assets.pharmeasy.in/apothecary/images/labtest_ff.webp?dim=256x0" alt="">
                     <p class="text-3xl font-bold text-black dark:text-white mt-2">Lab Test</p>
-                    <p class="text-2xl font-semibold text-slate-500 ">More 5000+ varieties</p>
+                    <p class="text-2xl font-semibold text-slate-500 ">More 5000+ varieties</p></a>
                 
                 </div>
                 
@@ -306,28 +235,7 @@
                 <p class="text-black dark:text-white">Privacy Policy</p>
             </div>
         </div>
-        
-        <script>
-         
-            let slideIndex = 0;
-            showSlides();
-            
-            function showSlides() {
-              let i;
-              let slides = document.getElementsByClassName("mySlides");
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-              }
-              slideIndex++;
-              if (slideIndex > slides.length) {slideIndex = 1}
-              slides[slideIndex-1].style.display = "block";
-              setTimeout(showSlides, 5000); // Change image every 2 seconds
-            }
-            function loginform()
-            {
-                windows.location.href = "../dist/login.html";
-            }
-        </script>
+        <script src="../dist/slideshow.js"></script>
 
 
     </footer>

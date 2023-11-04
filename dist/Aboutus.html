@@ -8,54 +8,115 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <nav class=" w-full h-16 bg-gradient-to-r from-indigo-500 flex iteam-center justify-between px-4 md:px4">
+<Style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins',sans-serif;
+        box-sizing: border-box;
         
-        <div class="text-2xl text-white font-bold  flex "><p class="font-mono p-3">Shivam Medicals</p><img class="h-8 m-3 hover" src="https://cdn-icons-png.flaticon.com/128/3209/3209049.png" alt=""></div>
-        <ul class="md:flex hidden font-semibold mt-5 ">
-            <li class="mx-[10px] cursor-pointer text-xl text-white mr-3"><span class="underline decoration-sky-600 hover:decoration-blue-400 hover:text-2xl font-semibold"><a href="../dist/home.html">Home </span></a></li>
-            <li class="mx-[10px] cursor-pointer text-xl text-white mr-3"><span class="underline decoration-sky-600 hover:decoration-blue-400 hover:text-2xl font-semibold"><a href="../dist/Aboutus.html">About Us </span></a></li>
-            <li class="mx-[10px] cursor-pointer text-xl text-white"><span class="underline decoration-sky-600 hover:decoration-blue-400 hover:text-2xl font-semibold"><a href="../dist/contact.html">Contact</span></a></li>
-        </ul>
-        <div>
-            <!-- <div>LogIn/SignUp</div> -->
-            <button class="hidden md:block mt-3 mb-3 px-4 py-2 bg-yellow-700 rounded-xl font-semibold hover:text-2xl hover:bg-yellow-500 cursor-pointer">LogIn/SignUp</button>
-            <div class="md:hidden">
-                <a class=" text-4xl " href="#"> &#8801; </a>
-            </div>
-        </div>
+    }
     
-    </nav>
-    <div class="bg-blue-200 min-h-screen p-8">
-        <header>
-            <!-- Your website header -->
+    #container1{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(108, 108, 158, 0.724),rgba(0, 0, 0, 0.472)), url(../icons/z2.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;  
+        position:fixed;      
+        
+    }
+    #box1{
+        height: 80%;
+        width: 80%;
+        
+        color: aliceblue;
+        
+
+    }
+    header{
+        display: flex;
+    }
+    #img1{
+        position: absolute;
+        right: 130px;
+        height: 200px;
+        top: 270px;
+        
+    }
+    #nav1{
+        
+        font-size: 3vh;
+        display: flex;
+        margin-left: 70vh;
+        margin-top: 3vh;
+        text-decoration: solid;
+        font-weight: 600;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: aliceblue;
+    }
+    #nav2{
+        
+        position: absolute;
+        right: 0;
+        margin-top: 3vh;
+        margin-right: 3vh;
+        color: aliceblue;
+        text-decoration: underline;
+
+    }
+    #nav1:hover{
+        text-decoration: underline;
+        
+        color: rgba(108, 108, 158, 0.724);
+        font-size: 3vh;
+        margin: 2vh;
+        margin-left: 70vh;
+        margin-top: 3vh;
+    }
+    #nav2:hover{
+        text-decoration: underline;
+        
+        color: rgba(108, 108, 158, 0.724);
+        font-size: 3vh;
+        margin: 2vh;
+        margin-left: 70vh;
+        margin-top: 3vh;
+    }
+    @media screen and (min-width: 480px)
+    {
+        #box1{
+            
+        }
+    }
+    
+</Style>
+
+<body>
+   
+    <div id="container1"  >
+        <header class="">
+            <a href=""><p  id="nav1">Shivam Medicals</p></a>
+            <a href=""><p id="nav2">Get founder details</p></a>
         </header>
-        <main class="bg-white p-4 rounded-lg shadow-lg">
-            <h1 class="text-2xl font-bold mb-4">About Us</h1>
-            <p class="mb-4">Welcome to Your Pharmacy, your trusted source for high-quality medicines and healthcare products. We are dedicated to serving our community with care and professionalism. Our team of experienced pharmacists is committed to providing expert advice and exceptional service.</p>
+        <div > 
+            <div id="box1" class="p-52 w-10/12 shadow-2xl pl-40 pt-52 ml-40 pt-40 py-40 2" >
+                <div>
+                <p class="mb-4 font-serif text-xl">Welcome to Your Pharmacy, your trusted source for high-quality medicines and healthcare products. We are dedicated to serving our community with care and professionalism. Our team of experienced pharmacists is committed to providing expert advice and exceptional service.</p>
             <p>At Your Pharmacy, your health is our top priority. We strive to make a positive impact on the well-being of our customers by offering a wide range of products and valuable health information.</p>
-            <button id="contactButton" class="bg-blue-500 text-white px-4 py-2 rounded-lg mt-4">Contact Us</button>
-        </main>
+        </div>
+            </div>
+        <div class="" ><img class="border-4 border-black rounded-full h-48 " id="img1" src="../icons/medicine.gif" alt=""></div>
+
+        </div>
+            
         <footer>
             <!-- Your website footer -->
         </footer>
     </div>
-    <script src="script.js">
-        const aboutSection = document.querySelector('.bg-white');
-const contactButton = document.getElementById('contactButton');
-
-aboutSection.addEventListener('mouseenter', () => {
-    aboutSection.classList.add('transform', 'scale-105', 'transition-transform', 'duration-500');
-});
-
-aboutSection.addEventListener('mouseleave', () => {
-    aboutSection.classList.remove('transform', 'scale-105', 'transition-transform', 'duration-500');
-});
-
-contactButton.addEventListener('click', () => {
-    // Add interactivity for the contact button, e.g., a contact form or modal.
-    alert('Thank you for reaching out to us!');
-});
-    </script>
+ 
 </body>
 </html>

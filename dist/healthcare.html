@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slideshow.css">
+    <script src="https://kit.fontawesome.com/bb367dc0c7.js" crossorigin="anonymous"></script>
+    <title>healthcare</title>
+</head>
+<body>
+    <nav class=" w-full h-16 bg-gradient-to-r from-indigo-500 flex iteam-center justify-between px-4 md:px4">
+        
+        <div class="text-2xl   text-black dark:text-white font-bold  flex "><p class="font-mono p-3">Shivam Medicals</p><img class="h-8 m-3 hover" src="https://cdn-icons-png.flaticon.com/128/3209/3209049.png" alt=""></div>
+        <ul class="md:flex hidden font-semibold mt-5 pr-10">
+            <li class="mx-[10px] cursor-pointer text-xl text-black dark:text-white"><a href="./home.html">Home</a></span></li>
+            <li class="mx-[10px] cursor-pointer text-xl text-black dark:text-white "><a href="./Aboutus.html">About Us</a></span></li>
+            <li class="mx-[10px] cursor-pointer text-xl text-black dark:text-white"><a href="">Contact</a></span></li>
+        </ul>
+        <div>
+            <!-- <div>LogIn/SignUp</div> -->
+            <button class="hidden md:block mt-3 mb-3 px-4 py-2 bg-black text-white rounded-xl font-bold hover:text-xl dark:bg-white dark:text-black cursor-pointer" onclick="loginform()">LogIn/SignUp</button>
+            <div class="md:hidden">
+                <a class=" text-4xl " href="#"> &#8801; </a>
+            </div>
+        </div>
+    
+</nav>
+<section >
+    <header class=" w-full h-auto p-10 ">
+       
+        <div    class="slideshow-container" >
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 5</div>
+              <img src="../dist/image/a1.png" style="width:100%">
+              <div class="text">Caption Text</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="../dist/image/a3.png">2 / 5</div>
+              <img class="" src="../dist/image/a2.jpg" style="width:100%">
+              <div class="text">Caption Two</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 5</div>
+              <img src="../dist/image/a5.jpg" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 5</div>
+              <img src="../dist/image/a4.jpeg" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">5 / 5</div>
+              <img src="../dist/image/a3.jpg" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)" >&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
+
+    </header>
+</section>
+<section>
+
+    <div>
+        <div class="p-5 max-w-3xl mx-auto mb-5  bg-white rounded-xl shadow-lg flex items-center space-x-20">
+            <div>
+                <img class="h-14 w-20 " src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/f10917087a483040b557e4b18204312c.png"
+                    alt="">
+            </div>
+            <div class="text-2xl font-medium text-black m-8">
+                Top Products
+                <p class="text-xl text-slate-500 ">
+                    Get upto <span class="text-green-600">50%off</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="p-5 max-w-3xl mx-auto mb-5  bg-white rounded-xl shadow-lg flex items-center space-x-20">
+            <div>
+                <img class="h-14 w-15" src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/fa936f30b4563fc4abd187fb22fe5258.png"
+                    alt="">
+            </div>
+            <div class="text-2xl font-medium text-black m-8">
+                Elderly Care
+                <p class="text-xl text-slate-500 ">
+                    Get upto <span class="text-red-600">60%off</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="p-5 max-w-3xl mx-auto mb-5  bg-white rounded-xl shadow-lg flex items-center space-x-20">
+            <div>
+                <img class="h-14 w-15" src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/03767360af7d3a1ab773b4e8f47dfd6a.png"
+                    alt="">
+            </div>
+            <div class="text-2xl font-medium text-black m-8">
+                Diwali Sale
+                <p class="text-xl text-slate-500 ">
+                    Get upto <span class="text-green-600">50%off</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="p-5 max-w-3xl mx-auto mb-5  bg-white rounded-xl shadow-lg flex items-center space-x-20">
+            <div>
+                <img class="h-14 w-15" src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/1e622b0308ec3ab48887512eaa3488a5.png"
+                    alt="">
+            </div>
+            <div class="text-2xl font-medium text-black m-8">
+                Personal Care
+                <p class="text-xl text-slate-500 ">
+                    Get upto <span class="text-green-600">40%off</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="p-5 max-w-3xl mx-auto mb-5  bg-white rounded-xl shadow-lg flex items-center space-x-20">
+            <div>
+                <img class="h-14 w-15" src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/9cc9a28ea4513009966cae794114eefd.png"
+                    alt="">
+            </div>
+            <div class="text-2xl font-medium text-black m-8">
+                Healthcare devices
+                <p class="text-xl text-slate-500 ">
+                    Get upto <span class="text-red-600">60%off</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="p-5 max-w-3xl mx-auto mb-5  bg-white rounded-xl shadow-lg flex items-center space-x-20">
+            <div>
+                <img class="h-14 w-15" src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/ce48d6d71ace3892945f0b0a64c1f0e9.png"
+                    alt="">
+            </div>
+            <div class="text-2xl font-medium text-black m-8">
+                Skin Care
+                <p class="text-xl text-slate-500 ">
+                    Get upto <span class="text-blue-600">40%off</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="p-5 max-w-3xl mx-auto mb-5  bg-white rounded-xl shadow-lg flex items-center space-x-20 ">
+            <div>
+                <img class="h-14 w-15" src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/ecad9a974e003fb987858b3ee81413c6.png"
+                    alt="">
+            </div>
+            <div class="text-2xl font-medium text-black m-8 ">
+                Ayurvedic Care
+                <p class="text-xl text-slate-500 ">
+                    Get upto <span class="text-green-600">45%off</span>
+                </p>
+            </div>
+        </div>
+    </div>
+  
+</section>
+<section>
+    <h2 class="font-bold text-2xl text-slate-800 m-2 p-2">Shop Safely And Worry-Free On Shivam Medicals</h2>
+    <p class="m-2 p-2 text-slate-500">Shivam Medicals is a renowned name in the online shopping of Over The Counter or healthcare products and other daily essentials. Ordering online on PharmEasy is convenient, fast and hassle-free; you can avoid the annoyance of queuing up at your local pharmacy and also avail of huge discounts of up to 80% OFF. Purchasing the healthcare requirements such as medical devices and nutritional supplements that you need will no longer burn a hole in your pocket. At PharmEasy, you are sure to find everything that you need because we have products across all healthcare categories.</p>
+    <h2 class="font-bold text-2xl text-slate-800 m-2 p-2">Why choose PharmEasy?</h2>
+    <ul class="m-4 p-2  text-slate-500">
+        <li ><i class="fa-solid fa-snowflake " ></i> 8400+ Brands</li>
+        <li><i class="fa-solid fa-snowflake"></i> 35K products in our stock</li>
+        <li><i class="fa-solid fa-snowflake"></i> Delivery to 22000+ pin codes</li>
+        <li><i class="fa-solid fa-snowflake"></i> Delivered to 50 lakh+ families</li>
+        <li><i class="fa-solid fa-snowflake"></i> Over 2M customers served</li>
+    </ul>
+   <h2 class="font-bold text-2xl text-slate-800 m-2 p-2">Our most popular categories:</h2>
+   <p class="m-2 p-2 text-slate-500">
+    We have a range of categories and products, some which are:
+   </p>
+   <h2 class="font-bold text-2xl text-slate-800 m-2 p-2">Devices</h2>
+   <p class="m-2 p-2 text-slate-500">
+    With the pandemic upending our lives, we have all realized that there are some medical devices that we need to keep in our homes such as Oximeter, Thermometer, Inhaler, Blood pressure monitor, Glucometer.
+
+   </p>
+   <h2 class="font-bold text-2xl text-slate-800 m-2 p-2">Personal care</h2>
+   <p class="m-2 p-2 text-slate-500">
+    Personal care products can include a wide range of products such as Bath products, , Skincare essentials, Razor blades, Toothpaste and toothbrush, Wet wipes, Lip balm, Face masks, Hand sanitizer, etc.
+   </p>
+   <h2 class="font-bold text-2xl text-slate-800 m-2 p-2">Nutrition and fitness supplements</h2>
+   <p class="m-2 p-2 text-slate-500">
+    To give your health a helping hand, you can order a wide variety of health supplements including Health drinks, Nutritional powder, Nutrition tablets/capsules.
+
+   </p>
+</section>
+    <script src="../dist/slideshow.js"></script>
+</body>
+</html>

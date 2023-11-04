@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name":" Asprine",
+        "price": 20,
+        "image": "image/1.png"
+    },
+    {
+        "id": 2,
+        "name":" Dolo",
+        "price": 250,
+        "image": "image/2.png"
+    },
+    {
+        "id": 3,
+        "name":" Evion 400mg Strip Of 10 Capsules",
+        "price": 290,
+        "image": "image/3.png"
+    },
+    {
+        "id": 4,
+        "name":" Pan 40mg Strip Of 15 Tablets",
+        "price": 200,
+        "image": "image/4.png"
+    },
+    {
+        "id": 5,
+        "name":"Clavam 625mg Strip Of 10 Tablets",
+        "price": 300,
+        "image": "image/5.png"
+    },
+    {
+        "id": 6,
+        "name":" Megapen Strip Of 10 Capsules",
+        "price": 200,
+        "image": "image/6.png"
+    },
+    {
+        "id": 7,
+        "name":" Supradyn Daily Multivitamin Tablet",
+        "price": 200,
+        "image": "image/7.png"
+    },
+    {
+        "id": 8,
+        "name":" Neurobion Forte Tablet 30'S",
+        "price": 200,
+        "image": "image/8.png"
+    }
+
+]
