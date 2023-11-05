@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slideshow.css">
+    <script src="https://kit.fontawesome.com/bb367dc0c7.js" crossorigin="anonymous"></script>
+    <title>healthcare</title>
+</head>
+<body>
+    <nav class=" w-full h-16 bg-gradient-to-r from-indigo-500 flex iteam-center justify-between px-4 md:px4">
+        
+        <div class="text-2xl   text-black dark:text-white font-bold  flex "><p class="font-mono p-3">Shivam Medicals</p><img class="h-8 m-3 hover" src="https://cdn-icons-png.flaticon.com/128/3209/3209049.png" alt=""></div>
+        <ul class="md:flex hidden font-semibold mt-5 pr-10">
+            <li class="mx-[10px] cursor-pointer text-xl text-black dark:text-white"><a href="./index.html">Home</a></span></li>
+            <li class="mx-[10px] cursor-pointer text-xl text-black dark:text-white "><a href="./Aboutus.html">About Us</a></span></li>
+            <li class="mx-[10px] cursor-pointer text-xl text-black dark:text-white"><a href="">Contact</a></span></li>
+        </ul>
+        <div>
+            <!-- <div>LogIn/SignUp</div> -->
+            <button class="hidden md:block mt-3 mb-3 px-4 py-2 bg-black text-white rounded-xl font-bold hover:text-xl dark:bg-white dark:text-black cursor-pointer" onclick="loginform()">LogIn/SignUp</button>
+            <div class="md:hidden">
+                <a class=" text-4xl " href="#"> &#8801; </a>
+            </div>
+        </div>
+    
+</nav>
+<section >
+    <header class=" w-full h-auto p-10 ">
+       
+        <div    class="slideshow-container" >
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 5</div>
+              <img src="../dist/image/b1.jpg" style="width:100%">
+              <div class="text">Caption Text</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 5</div>
+              <img class="" src="../dist/image/b2.jpg" style="width:100%">
+              <div class="text">Caption Two</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 5</div>
+              <img src="../dist/image/b3.jpg" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 5</div>
+              <img src="../dist/image/b4.jpg" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">5 / 5</div>
+              <img src="../dist/image/a3.jpg" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)" >&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
+
+    </header>
+</section>
+
+<section>
+<div class="grid grid-cols-2 grid-rows-2 gap-4">
+    <div>
+        <div class="p-5 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-5">
+            <div>
+                <img class="h-14 w-15" src="https://assets.pharmeasy.in/web-assets/dist/dea295a0.svg"
+                    alt="">
+            </div>
+            <div class="text-2xl font-medium text-black ">
+                All Test
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="p-5 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-5">
+            <div>
+                <img class="h-14 w-15" src="https://assets.pharmeasy.in/web-assets/dist/dea295a0.svg"
+                    alt="">
+            </div>
+            <div class="text-2xl font-medium text-black ">
+                Health Packages
+                
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="p-5 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-5">
+            <div>
+                <img class="h-14 w-15" src="https://assets.pharmeasy.in/web-assets/dist/d4d62fbf.svg"
+                    alt="">
+            </div>
+            <div class="text-2xl font-medium text-black ">
+                Upload Prescription
+                
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="p-5 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-5">
+            <div>
+                <img class="h-14 w-15" src="https://assets.pharmeasy.in/web-assets/dist/4ed59722.svg"
+                    alt="">
+            </div>
+            <div class="text-2xl font-medium text-black ">
+                Book on Call
+                
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+
+</section>
+<section>
+    <div class="h-24  bg-slate-500 m-4 rounded-2xl p-5 max-w-5xl mx-auto  shadow-lg flex items-center space-x-5">
+        <div>
+            <img class="h-14 w-15" src="https://assets.pharmeasy.in/web-assets/dist/3864b471.svg"
+                alt="">
+        </div>
+        <div class="text-xl font-medium text-black ">
+            <p>Save 5% on allopathatic, 50% on 1st lab test & get FREE delivery with PLUS membership </p><p>Know more ></p>
+            
+        </div>
+
+    </div>
+</section>
+<section>
+    <h2 class="text-2xl font-semibold m-4 p-2">Affordable Health Packages</h2>
+    <div class="grid grid-cols-5 gap-2">
+    <div>
+        <div class="p-5 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-5">
+            <div>
+                <img class="h-14 w-15" src="https://assets.pharmeasy.in/web-assets/dist/dea295a0.svg"
+                    alt="">
+            </div>
+            <div class="text-md font-medium text-black ">
+                Comprensive Full body chekup
+                <p class="text-slate-500">$1,799 onwards</p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="p-5 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-5">
+            <div>
+                <img class="h-14 w-15" src="https://assets.pharmeasy.in/web-assets/dist/dea295a0.svg"
+                    alt="">
+            </div>
+            <div class="text-md font-medium text-black ">
+                Health 2023 Full Body checkup
+                <p class="text-slate-500">$1,799 onwards</p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="p-5 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-5">
+            <div>
+                <img class="h-14 w-15" src="https://assets.pharmeasy.in/web-assets/dist/dea295a0.svg"
+                    alt="">
+            </div>
+            <div class="text-sm font-medium text-black ">
+                Wellness 360 Full Body Checkup With Vitamins and more
+                <p class="text-slate-500">$1,799 onwards</p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="p-5 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-5">
+            <div>
+                <img class="h-14 w-15" src="https://assets.pharmeasy.in/web-assets/dist/dea295a0.svg"
+                    alt="">
+            </div>
+            <div class="text-md font-medium text-black ">
+                Aarogyam Full Body Checkup  Vitamins
+                <p class="text-slate-500">$1,799 onwards</p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="p-5 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-5">
+            <div>
+                <img class="h-14 w-15" src="https://assets.pharmeasy.in/web-assets/dist/dea295a0.svg"
+                    alt="">
+            </div>
+            <div class="text-xl font-medium text-black ">
+                Diabetes care
+                <p class="text-slate-500">$1,799 onwards</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<section>
+    <h2 class="font-bold text-2xl text-slate-800 m-2 p-2">The (Pharm)Easy Way To Book Lab Tests Online</h2>
+   <p class="m-2 p-2 text-slate-500">
+    Book Diagnostics Lab Test Online. Get doorstep sample collection
+   </p>
+    <h2 class="font-bold text-2xl text-slate-800 m-2 p-2">TLab Test Booking Made Simple</h2>
+   <p class="m-2 p-2 text-slate-500">
+    One of the most popular services PharmEasy offers is diagnostic testing. People need to book pathological tests for many reasons. But before booking, they wonder if the diagnostic centre can be trusted to produce accurate results and how long they might have to wait in a queue to get tested.
+    <br><br>
+    To bypass these hassles, PharmEasy has set up an extensive network of reputed pathological laboratories in India. One such lab is Thyrocare. With Thyrocare on board, we can give you access to a wide network of diagnostic laboratories.We also offer a home collection of samples as well. Bid adieu to anxious days of wondering where to book diagnostic tests and embrace the PharmEasy way.
+   </p>
+    <h2 class="font-bold text-2xl text-slate-800 m-2 p-2">Lab tests at your doorstep</h2>
+   <p class="m-2 p-2 text-slate-500">
+    Book Diagnostics Lab Test Online. Get doorstep sample collection
+   </p>
+
+
+</section>
+    <script src="../dist/slideshow.js"></script>
+</body>
+</html>
