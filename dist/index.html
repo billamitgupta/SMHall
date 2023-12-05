@@ -18,105 +18,17 @@
         background-size: cover;
         position: relative;
     }*/
-    
-  
 
-    #category{
-        display: grid;
-        grid-gap: 50px;
-        grid-template-columns: 1fr ,1fr, 1fr,1fr;
-    }
-    
-    #a:hover{
-        box-shadow: 0 0 11px rgba(33,33,33,.2); 
-    }
-    #nav1{
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-
-body { background: #e0e5ec; }
-html { font-size: 10px; }
-
-::selection {
-   display: none;
-}
-
-::-webkit-scrollbar {
-   width: 6px;
-   height: 6px;
-}
-
-::-webkit-scrollbar-track {
-   background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-   background: #bbb;
-   border-radius: 50px;
-}
-
-
-section { margin: 15px 0; }
-
-.movie-slide { background:#fff; 
-    color: #000; margin: auto;
-    max-width: 850px;
-    
-    overflow: hidden; 
-    padding: 10px 10px 13px; }
-
-.movie-slide:hover { 
-   transition: 1s ease-out; 
-   box-shadow: rgba(0, 0, 0, 0.6) 0px 3px 15px; }
-
-.container-title { display: flex; 
-    border-bottom: 2px solid; width:110px;
-    margin-left: 15px;
-    font-size: 25px;  }
-
-.movie-box { display: flex;
-   overflow-x: scroll;
-   padding: 10px 10px;
-   scroll-snap-type: x mandatory;
-   scroll-padding: 0px;
-}
-
-.movie-info { 
-    margin: 5px 15px 8px 0px;
-    scroll-snap-align: start; }
-
-.movie-info img { 
-  background: center center/cover no-repeat #ddd;
-   border-radius: 0 0 10px 10px;
-   height: 300px;
-   object-fit: cover;
-   width: 220px;
-   object-fit: fill;
-}
-
-.movie-name { cursor:pointer;
-   padding: 12px 0px;
-   width: 200px;
-   font-size: 1.8rem;  }
-
-.review { 
-   font-size: 1.4rem;
-   font-weight: 300; }
-.review .fa-solid { font-size: 1.8rem; color: #e53935; margin: 0 10px; }
-
-
-
-   
     
 </style>
 
-<body class=" bg-white-100 dark:bg-slate-900 " id="div">
+<body class=" bg-white-100 dark:bg-slate-800" id="div">
     <!-- navbar goes here -->
     <nav class=" w-full h-16 bg-gradient-to-r from-indigo-500 flex iteam-center justify-between px-4 md:px4">
         
             <div class="text-2xl   text-black dark:text-white font-bold  flex "><img class="h-8 m-3  shadow-3xl" src="https://cdn-icons-png.flaticon.com/128/3209/3209049.png" alt=""><p class="  p-3" id="nav1">Shivam Medicals</p></div>
             <ul class="md:flex hidden font-semibold mt-5 pr-10">
-                <li class="mx-[10px] cursor-pointer text-xl text-black dark:text-white"><a href="./home.html">Home</a></span></li>
+                <li class="mx-[10px] cursor-pointer text-xl text-black dark:text-white"><a href="./index.html">Home</a></span></li>
                 <li class="mx-[10px] cursor-pointer text-xl text-black dark:text-white "><a href="./Aboutus.html">About Us</a></span></li>
                 <li class="mx-[10px] cursor-pointer text-xl text-black dark:text-white"><a href="">Contact</a></span></li>
             </ul>
@@ -230,44 +142,44 @@ section { margin: 15px 0; }
         </div>
         <div class="w-[90%] h-auto flex flex-wrap justify-around mt-6">
             <div class="w-64 flex flex-col items-center mb-12 hover:border-4 hover:border-cyan-500 hover:border-double shadow-2xl dark:border-white">
-                <img class="h-[100px] w-[150px] border-spacing-1" src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/f10917087a483040b557e4b18204312c.png?f=png?dim=256x0" alt="">
+                <a href="../cart.html"><img class="h-[100px] w-[150px] border-spacing-1" src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/f10917087a483040b557e4b18204312c.png?f=png?dim=256x0" alt="">
                 <p class="text-black dark:text-white font-bold text-2xl">Top Product</p>
-                <p class="text-slate-400 font-semibold "></p>
+                <p class="text-slate-400 font-semibold "></p></a>
         </div>
             <div class="w-64 flex flex-col items-center mb-12  hover:border-4 hover:border-cyan-500 hover:border-double shadow-2xl dark:border-white">
-                <img class="h-[100px] w-[150px] border-spacing-1 " src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/fa936f30b4563fc4abd187fb22fe5258.png?f=png?dim=256x0" alt="">
+                <a href="../cart.html"><img class="h-[100px] w-[150px] border-spacing-1 " src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/fa936f30b4563fc4abd187fb22fe5258.png?f=png?dim=256x0" alt="">
                 <p class="text-black dark:text-white font-bold text-2xl">Elderly care</p>
-                <p class="text-slate-400 font-semibold "></p>
+                <p class="text-slate-400 font-semibold "></p></a>
         </div>
             <div class="w-64 flex flex-col items-center mb-12  hover:border-4 hover:border-cyan-500 hover:border-double shadow-2xl dark:border-white">
-                <img  class="h-[100px] w-[150px] border-spacing-1" src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/1e622b0308ec3ab48887512eaa3488a5.png?f=png?dim=256x0" alt="">
+                <a href="../cart.html"><img  class="h-[100px] w-[150px] border-spacing-1" src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/1e622b0308ec3ab48887512eaa3488a5.png?f=png?dim=256x0" alt="">
                 <p class="text-black dark:text-white font-bold text-2xl">Personal Care</p>
                 <p class="text-slate-400 font-semibold "></p>
         </div>
             <div class="w-64 flex flex-col items-center mb-12  hover:border-4 hover:border-cyan-500 hover:border-double shadow-2xl dark:border-white">
-                <img class="h-[100px] w-[150px] border-spacing-1"src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/9cc9a28ea4513009966cae794114eefd.png?f=png?dim=256x0" alt="">
+                <a href="../cart.html"><img class="h-[100px] w-[150px] border-spacing-1"src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/9cc9a28ea4513009966cae794114eefd.png?f=png?dim=256x0" alt="">
                 <p class="text-black dark:text-white font-bold text-2xl">HealthCare Dvices</p>
-                <p class="text-slate-400 font-semibold "></p>
+                <p class="text-slate-400 font-semibold "></p></a>
         </div>
             <div class="w-64 flex flex-col items-center mb-12  hover:border-4 hover:border-cyan-500 hover:border-double shadow-2xl dark:border-white">
-                <img class="h-[100px] w-[150px] border-spacing-1" src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/335dae76832d370c94f0440f5ba89e1f.png?f=png?dim=256x0" alt="">
+                <a href="../cart.html"><img class="h-[100px] w-[150px] border-spacing-1" src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/335dae76832d370c94f0440f5ba89e1f.png?f=png?dim=256x0" alt="">
                 <p class="text-black dark:text-white font-bold text-2xl">Health food and drink</p>
-                <p class="text-slate-400 font-semibold "></p>
+                <p class="text-slate-400 font-semibold "></p></a>
         </div>
             <div class="w-64 flex flex-col items-center mb-12  hover:border-4 hover:border-cyan-500 hover:border-double shadow-2xl dark:border-white">
-                <img class="h-[100px] w-[150px] border-spacing-1" src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/ce48d6d71ace3892945f0b0a64c1f0e9.png?f=png?dim=256x0" alt="">
+                <a href="../cart.html"><img class="h-[100px] w-[150px] border-spacing-1" src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/ce48d6d71ace3892945f0b0a64c1f0e9.png?f=png?dim=256x0" alt="">
                 <p class="text-black dark:text-white font-bold text-2xl">Health food and drink</p>
-                <p class="text-slate-400 font-semibold "></p>
+                <p class="text-slate-400 font-semibold "></p></a>
         </div>
             <div class="w-64 flex flex-col items-center mb-12 hover:border-4 hover:border-cyan-500 hover:border-double shadow-2xl dark:border-white">
-                <img class="h-[100px] w-[150px] border-spacing-1" src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/fb48ce63ed45318b92689d84482d1111.jpg?f=jpg?dim=256x0" alt="">
+                <a href="../cart.html"><img class="h-[100px] w-[150px] border-spacing-1" src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/fb48ce63ed45318b92689d84482d1111.jpg?f=jpg?dim=256x0" alt="">
                 <p class="text-black dark:text-white font-bold text-2xl">Health food and drink</p>
-                <p class="text-slate-400 font-semibold "></p>
+                <p class="text-slate-400 font-semibold "></p></a>
         </div>
-            <div class="w-64 flex flex-col items-center mb-12  hover:border-4 hover:border-cyan-500 hover:border-double shadow-2xl dark:border-white">
+            <a href="../cart.html"><div class="w-64 flex flex-col items-center mb-12  hover:border-4 hover:border-cyan-500 hover:border-double shadow-2xl dark:border-white">
                 <img class="h-[100px] w-[150px] border-spacing-1" src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/4405b7900b0b34fcb5c8572aae9d4b2e.png?f=png?dim=256x0" alt="">
                 <p class="text-black dark:text-white font-bold text-2xl">Health food and drink</p>
-                <p class="text-slate-400 font-semibold "></p>
+                <p class="text-slate-400 font-semibold "></p></a>
         </div>
         <!-- Product sectios ends here -->
     </div>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test/chai/code</title>
+</head>
+<body>
+   
+    
+</body>
+<script>
+    function div1( name)  {
+         const div = document.createElement('div')
+         div.style.background = "red"
+         div.id = "div"
+         div.className = "div"
+         div.style.backgroundColor = "black"
+         div.style.color= "white"
+         div.style.padding= "12px"
+         div.innerHTML = `My name is ${name}`
+         //const name1 = document.createTextNode(`${name}`)
+         //div.appendChild(name1)
+         document.body.appendChild(div)  
+    }
+    div1("amit")
+ </script>
+</html>
